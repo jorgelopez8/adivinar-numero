@@ -11,7 +11,7 @@ function comprobarNumero(numero) {
   intentos++;
 
   if (numero === numeroAdivinar) {
-    alert(`¡Felicidades! Has acertado el número en ${intentos} intentos.`);
+    alert(`¡Enhorabuena! Has acertado el número en ${intentos} intentos.`);
     return true;
   } else if (numero < numeroAdivinar) {
     alert('El número que has introducido es menor.');
@@ -19,7 +19,7 @@ function comprobarNumero(numero) {
     alert('El número que has introducido es mayor.');
   }
   if (intentos === 3 && numero != numeroAdivinar) {
-    alert(`Has agotado tus intentos, el numero era ${numeroAdivinar}.`);
+    alert(`Se han terminado tus intentos, el numero era ${numeroAdivinar}.`);
   }
 
   return false;
